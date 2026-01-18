@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Lasters Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f1e8; /* cream rengi */
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 90px;
+      height: auto;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 15px;
+      color: #ddd;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top">
+      <img src="images/logo.png" alt="Lasters Studio Logo" class="logo">
+      <h1>Merhaba, Lasters Studio’ya Hoş Geldin</h1>
+    </div>
+    <p>
+      Lasters Studio; oyun geliştirme, yazılım öğrenme ve kendi hayallerini
+      kodla gerçeğe dönüştürme amacıyla kurulmuş kişisel bir stüdyodur.
+    </p>
+  </header>
+
+  <nav>
+    <a href="anasayfa.html">Anasayfa</a>
+    <a href="oyunlar.html">Oyunlarım</a>
+    <a href="kariyer.html">Hayatım & Kariyer</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <div class="container">
+
+    <section class="card">
+      <h2>Benim Hayatım ve Planlarım</h2>
+      <p>
+        Küçük yaşlardan itibaren oyunlara ve bilgisayarlara büyük bir ilgim vardı.
+        Zamanla sadece oynamak değil, oyunların nasıl yapıldığını da öğrenmek
+        istedim. Bu merak beni kod yazmaya ve kendi projelerimi üretmeye itti.
+      </p>
+      <p>
+        Şu anda Unity ile oyun geliştiriyorum, aynı zamanda web siteleri yapmayı
+        öğreniyorum. Her gün kendimi biraz daha geliştirmek, yeni şeyler öğrenmek
+        ve daha iyi projeler ortaya koymak en büyük hedefim.
+      </p>
+      <p>
+        İleride kendi oyun stüdyomu büyütmek, oyunlarımı dünya çapında
+        yayınlamak ve bu işi bir kariyere dönüştürmek istiyorum.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact Us</h2>
+      <p>
+        Benimle iletişime geçmek, projelerim hakkında bilgi almak ya da sadece
+        selam vermek istersen aşağıdaki butonu kullanabilirsin.
+      </p>
+      <button onclick="iletisimMesaj()">Bana Ulaş</button>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Lasters Studio – Tüm Hakları Saklıdır</p>
+  </footer>
+
+  <script>
+    function iletisimMesaj() {
+      alert("İletişim bölümü yakında aktif olacak 🚀");
+    }
+  </script>
+
+</body>
+</html>
